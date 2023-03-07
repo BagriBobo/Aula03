@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editValor1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="44dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Valor 1"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editResultado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="44dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Resultado"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editValor2" />
+
+    <EditText
+        android:id="@+id/editValor2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="44dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Valor 2"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editValor1" />
+
+    <Button
+        android:id="@+id/buttonSomar"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#4CAF50"
+        android:text="SOMAR"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSubtrair"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editResultado" />
+
+    <Button
+        android:id="@+id/buttonSubtrair"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#E91E63"
+        android:text="SUBTRAIR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editResultado" />
+
+    <Button
+        android:id="@+id/buttonMultiplicar"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#2196F3"
+        android:text="Multiplicar"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDividir"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSomar" />
+
+    <Button
+        android:id="@+id/buttonDividir"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#FF9800"
+        android:text="Dividir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSubtrair" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
